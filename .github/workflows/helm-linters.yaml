@@ -44,7 +44,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check values schema json
-        uses: losisin/helm-values-schema-json-action@v1
+        uses: losisin/helm-values-schema-json-action@b0dbd950f1b546a97789ae081ba1ec1b0557f927 # v1.8.0
         with:
           working-directory: charts/ciso-assistant-next
           input: values.yaml
@@ -55,7 +55,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Generate helm-docs
-        uses: losisin/helm-docs-github-action@v1
+        uses: losisin/helm-docs-github-action@a57fae5676e4c55a228ea654a1bcaec8dd3cf5b5 # v1.6.2
         with:
           chart-search-root: charts/ciso-assistant-next
           fail-on-diff: true
